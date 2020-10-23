@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link href="normalize.css" rel="stylesheet" type="text/css" />
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <main>
+    <h1>Formularz testowy</h1>
+    <form method="post" action="https://dev.cotenfrontend.pl" class="form">
+      <p>
+        <label>
+          <inputname="agreement" type="checkbox" /> Zaprzedaje duszę firmie
+          Appfel.</label>
+      </p>
+      <fieldset>
+        <legend>Twoje dane</legend>
+        <p>
+          <label for="firstName"> Twoje imię: </label>
+          <input class="form_item" id="firstName" placeholder="Podaj swoje imie" name="firstName" />
+        </p>
+
+        <p>
+          <label for="lastName"> Twoje nazwisko: </label>
+          <input class="form_item" id="lastName" placeholder="Podaj swoje nazwisko" name="lastName" />
+        </p>
+
+        <p>
+          <label for="phoneNumber"> Numer telefonu: </label>
+          <input class="form_item" id="phoneNumber" name="phoneNumber" placeholder="xxx-xxx-xxx" type="tel" />
+        </p>
+        <p>
+          <label for="emailAdress"> Adres e-mail: </label>
+          <input class="form_item" id="emailAdress" placeholder="xxxxx@xx.com" name="emailAdress" type="email" />
+        </p>
+        <p>
+          <label for="lastName"> Długość pindola: </label>
+          <input class="form_item" id="range" name="range" type="range" min="0" max="200" step="1" />
+        </p>
+      </fieldset>
+
+      <p>
+        <label class="text" for="yourStory">Twój opis:</label>
+        <textarea name="yourStory" id="yourStory" cols="30" rows="10"></textarea>
+      </p>
+
+      <fieldset>
+        <legend>Dane adresowe</legend>
+        <p>
+          <label for="cityName"> Miasto: </label>
+          <input class="form_item" id="cityName" name="cityName" />
+        </p>
+
+        <p>
+          <label for="streetName"> Ulica: </label>
+          <input class="form_item" id="streetName" name="streetName" />
+        </p>
+
+        <p>
+          <label for="postalCode"> Kod pocztowy: </label>
+          <input class="form_item" id="postalCode" name="postalCode" />
+        </p>
+      </fieldset>
+
+      <fieldset>
+        <label>Ulubiony smak lodów:</label>
+        <p>
+          <label>
+            <input type="radio" name="iceCream" value="Chocolate" />Czekolada
+          </label>
+        </p>
+        <p>
+          <label>
+            <input type="radio" name="iceCream" value="SaltedCarmel" />Słony
+            karmel
+          </label>
+        </p>
+        <p>
+          <label>
+            <input type="radio" name="iceCream" value="Mango" />Mango
+          </label>
+        </p>
+      </fieldset>
+      <p>
+        <label for="favouriteNumber"> Podaj swoją ulubioną liczbę: </label>
+        <input class="form_item" id="favouriteNumber" name="favouriteNumber" type="number" />
+      </p>
+      <p>
+        <label for="password"> Wprowadź hasło: </label>
+        <input class="form_item" id="password" name="password" type="password" />
+      </p>
+      <p>
+        <label for="avatar"> Wybierz plik: </label>
+        <input class="form_item" id="avatar" name="avatar" type="file" />
+      </p>
+      <p>
+        <label for="band">Wybierz jeden zespół</label>
+        <select id="band" name="band">
+          <option value="band-0">-----</option>
+          <option value="band-1">BajpasTan</option>
+          <option value="band-2">Grupa Operacyjna</option>
+          <option value="band-3">Downa XD</option>
+        </select>
+      </p>
+      <fieldset>
+        <legend>Bonus:</legend>
+        <p>
+          <label for="name"> Twoje imię: </label>
+          <input class="form_item" id="name" placeholder="Podaj imię do bonusu" name="name" />
+        </p>
+
+        <p>
+          <input name="send" type="submit" value="send" />
+        </p>
+    </form>
+  </main>
+</body>
+
+</html>
